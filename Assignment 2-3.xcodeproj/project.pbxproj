@@ -7,22 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D74518527A7C0640012EE71 /* MainTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74518427A7C0640012EE71 /* MainTable.swift */; };
+		2D74518727A7C3A10012EE71 /* ItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74518627A7C3A10012EE71 /* ItemCellView.swift */; };
+		2D74518A27A7C6E30012EE71 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74518927A7C6E30012EE71 /* Teams.swift */; };
 		2DBEFDAC27A792AF0033CF44 /* Assignment_2_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBEFDAB27A792AF0033CF44 /* Assignment_2_3App.swift */; };
 		2DBEFDAE27A792AF0033CF44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBEFDAD27A792AF0033CF44 /* ContentView.swift */; };
 		2DBEFDB027A792B00033CF44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DBEFDAF27A792B00033CF44 /* Assets.xcassets */; };
 		2DBEFDB327A792B00033CF44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DBEFDB227A792B00033CF44 /* Preview Assets.xcassets */; };
-		2DBEFDB527A792B00033CF44 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBEFDB427A792B00033CF44 /* Persistence.swift */; };
 		2DBEFDB827A792B00033CF44 /* Assignment_2_3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DBEFDB627A792B00033CF44 /* Assignment_2_3.xcdatamodeld */; };
+		2DBEFDC027A7950B0033CF44 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2DBEFDBF27A7950B0033CF44 /* Alamofire */; };
+		2DBEFDC327A7951E0033CF44 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2DBEFDC227A7951E0033CF44 /* SwiftyJSON */; };
+		2DBEFDC627A795440033CF44 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBEFDC527A795440033CF44 /* CoreDataService.swift */; };
+		2DBEFDC827A795520033CF44 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBEFDC727A795520033CF44 /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D74518427A7C0640012EE71 /* MainTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTable.swift; sourceTree = "<group>"; };
+		2D74518627A7C3A10012EE71 /* ItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellView.swift; sourceTree = "<group>"; };
+		2D74518927A7C6E30012EE71 /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		2DBEFDA827A792AF0033CF44 /* Assignment 2-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment 2-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DBEFDAB27A792AF0033CF44 /* Assignment_2_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_2_3App.swift; sourceTree = "<group>"; };
 		2DBEFDAD27A792AF0033CF44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2DBEFDAF27A792B00033CF44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DBEFDB227A792B00033CF44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2DBEFDB427A792B00033CF44 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2DBEFDB727A792B00033CF44 /* Assignment_2_3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment_2_3.xcdatamodel; sourceTree = "<group>"; };
+		2DBEFDC527A795440033CF44 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		2DBEFDC727A795520033CF44 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,12 +40,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBEFDC327A7951E0033CF44 /* SwiftyJSON in Frameworks */,
+				2DBEFDC027A7950B0033CF44 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D74518827A7C6D20012EE71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D74518927A7C6E30012EE71 /* Teams.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2DBEFD9F27A792AE0033CF44 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +75,11 @@
 		2DBEFDAA27A792AF0033CF44 /* Assignment 2-3 */ = {
 			isa = PBXGroup;
 			children = (
+				2D74518827A7C6D20012EE71 /* Models */,
+				2DBEFDC427A7952C0033CF44 /* Service */,
 				2DBEFDAB27A792AF0033CF44 /* Assignment_2_3App.swift */,
-				2DBEFDAD27A792AF0033CF44 /* ContentView.swift */,
+				2DBEFDCA27A7956A0033CF44 /* Views */,
 				2DBEFDAF27A792B00033CF44 /* Assets.xcassets */,
-				2DBEFDB427A792B00033CF44 /* Persistence.swift */,
 				2DBEFDB627A792B00033CF44 /* Assignment_2_3.xcdatamodeld */,
 				2DBEFDB127A792B00033CF44 /* Preview Content */,
 			);
@@ -71,6 +92,25 @@
 				2DBEFDB227A792B00033CF44 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2DBEFDC427A7952C0033CF44 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2DBEFDC527A795440033CF44 /* CoreDataService.swift */,
+				2DBEFDC727A795520033CF44 /* ApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2DBEFDCA27A7956A0033CF44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DBEFDAD27A792AF0033CF44 /* ContentView.swift */,
+				2D74518427A7C0640012EE71 /* MainTable.swift */,
+				2D74518627A7C3A10012EE71 /* ItemCellView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +129,10 @@
 			dependencies = (
 			);
 			name = "Assignment 2-3";
+			packageProductDependencies = (
+				2DBEFDBF27A7950B0033CF44 /* Alamofire */,
+				2DBEFDC227A7951E0033CF44 /* SwiftyJSON */,
+			);
 			productName = "Assignment 2-3";
 			productReference = 2DBEFDA827A792AF0033CF44 /* Assignment 2-3.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +161,10 @@
 				Base,
 			);
 			mainGroup = 2DBEFD9F27A792AE0033CF44;
+			packageReferences = (
+				2DBEFDBE27A7950B0033CF44 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2DBEFDC127A7951E0033CF44 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 2DBEFDA927A792AF0033CF44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,10 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DBEFDB527A792B00033CF44 /* Persistence.swift in Sources */,
+				2D74518A27A7C6E30012EE71 /* Teams.swift in Sources */,
+				2D74518727A7C3A10012EE71 /* ItemCellView.swift in Sources */,
 				2DBEFDAE27A792AF0033CF44 /* ContentView.swift in Sources */,
+				2DBEFDC827A795520033CF44 /* ApiService.swift in Sources */,
+				2DBEFDC627A795440033CF44 /* CoreDataService.swift in Sources */,
 				2DBEFDAC27A792AF0033CF44 /* Assignment_2_3App.swift in Sources */,
 				2DBEFDB827A792B00033CF44 /* Assignment_2_3.xcdatamodeld in Sources */,
+				2D74518527A7C0640012EE71 /* MainTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment 2-3/Preview Content\"";
@@ -303,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment 2-3/Preview Content\"";
@@ -349,6 +403,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DBEFDBE27A7950B0033CF44 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		2DBEFDC127A7951E0033CF44 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DBEFDBF27A7950B0033CF44 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DBEFDBE27A7950B0033CF44 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2DBEFDC227A7951E0033CF44 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DBEFDC127A7951E0033CF44 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2DBEFDB627A792B00033CF44 /* Assignment_2_3.xcdatamodeld */ = {
